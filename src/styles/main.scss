@@ -1,0 +1,15 @@
+html,
+body {
+  #root{
+	max-width: unset;
+	padding: 0;
+  }
+}
+
+.test-background {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

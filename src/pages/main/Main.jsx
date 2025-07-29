@@ -1,7 +1,8 @@
+import '../../styles/main.scss'
 const Main = () => {
     return (
-        <div>
-			<div></div>
+        <div className='test-background'>
+			Main
 		</div>
     )
 }
