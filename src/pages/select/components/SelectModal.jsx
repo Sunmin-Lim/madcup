@@ -40,6 +40,7 @@ const SelectModal = ({open, setOpen, setSelectList, item, count, setCount}) => {
 	  };
 	  const handleClose = () => {
 		const result = pickRandomItems(totalImageList, count)
+		console.log(result)
 		setSelectList(result)
 		setOpen(false)
 	  }
