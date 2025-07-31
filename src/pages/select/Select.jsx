@@ -31,7 +31,7 @@ const Select = () => {
 	  };
 	const handleClick = (index) => {
 		setCurrentSelect(index)
-		const next = [...nextList, selectList[currentIndex]]
+		const next = [...nextList, selectList[index]]
 		setNextList(next)
 		setTimeout(() => {
 			setCurrentSelect('')
