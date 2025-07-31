@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import Header from '../../components/Header'
 import '../../styles/main.scss'
 import { cardList } from '../../utils/list'
@@ -21,6 +21,7 @@ const Select = () => {
 	const [selectList, setSelectList] = useState([])
 	const [nextList, setNextList] = useState([])
 	const [currentSelect, setCurrentSelect] = useState('')
+	const navigate = useNavigate()
 	const [currentIndex, setCurrentIndex] = useState(0)
 	const getImageByName = (fileName) => {
 		if(!fileName) return null;
@@ -52,12 +53,12 @@ const Select = () => {
 		},2000)
 	}
 	useEffect(() => {
-		console.log(selectList)
-	},[selectList])
-	useEffect(() => {
-		const find = cardList.find(e => e.id == id)
-		if(find){
-			setItem(find)
+		if(!id) navigate('/')
+		else{
+			const find = cardList.find(e => e.id == id)
+			if(find){
+				setItem(find)
+			}
 		}
 	},[id])
 	return(
