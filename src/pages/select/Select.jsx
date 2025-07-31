@@ -53,7 +53,7 @@ const Select = () => {
 		},2000)
 	}
 	useEffect(() => {
-		if(!id) navigate('/')
+		if(!id) navigate('/madcup')
 		else{
 			const find = cardList.find(e => e.id == id)
 			if(find){

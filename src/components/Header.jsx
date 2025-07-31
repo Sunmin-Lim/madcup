@@ -7,7 +7,7 @@ const Header = () => {
 			<div 
 				style={{cursor:'pointer', height:'100%', padding:'0 10px', background:'#1ab394', color:"#fff", display:'flex', alignItems:'center', justifyContent:'center'}}
 				onClick={() => {
-					navigate('/')
+					navigate('/madcup')
 				}}
 			>
 				<img src={MadCamp} style={{width: 30, height: 30, marginRight:10}}/>

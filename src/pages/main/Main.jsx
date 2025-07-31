@@ -101,7 +101,7 @@ const Main = () => {
 						let first = randomNumArr[0]
 						let second = randomNumArr[1]
 						return(
-							<div className="test-card" key={data.id} onClick={() => navigate('/' + data.id)}>
+							<div className="test-card" key={data.id} onClick={() => navigate('/madcup/' + data.id)}>
 								{imageFilter.length >= 2 && 
 									<div style={{display:'flex'}}>
 										<img 

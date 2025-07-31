@@ -10,8 +10,8 @@ function App() {
 		<BrowserRouter>
 			<Suspense>
 				<Routes>
-					<Route path='/' element={<Main/>}/>
-					<Route path='/:id' element={<Select/>}/>
+					<Route path='/madcup' element={<Main/>}/>
+					<Route path='/madcup/:id' element={<Select/>}/>
 				</Routes>
 			</Suspense>
 		</BrowserRouter>
